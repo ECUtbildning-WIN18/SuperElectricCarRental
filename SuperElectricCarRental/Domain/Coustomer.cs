@@ -16,5 +16,10 @@ namespace SuperElectricCarRental.Domain
             SocialSecurityNumber = socialSecurityNumber;
             // We now have a Coustomer with a Name and working CreditCard
         }
+
+        public string GetName()
+        {
+            return Name;
+        }
     }
 }
