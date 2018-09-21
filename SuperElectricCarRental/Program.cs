@@ -7,9 +7,8 @@ namespace SuperElectricCarRental
         static void Main(string[] args)
         {
             Menu MainMenu = new Menu();
-         while(true)
-          MainMenu.VehicleMenu();
-            
+            while(true)
+            MainMenu.VehicleMenu();            
         }
     }
 }

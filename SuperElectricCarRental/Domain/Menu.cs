@@ -5,20 +5,22 @@ namespace SuperElectricCarRental.Domain
 {
     class Menu
     {
+        private CarHolder ch = new CarHolder();
         private string[] CarList { get; } = { "Dummy 1", "Dummy 2" };
         private string[] RentedCarList { get; } = { "Dummy 1" };
         private int NumberofCars { get; set; } = 0;
         private int NumberofRentedCars { get; set; } = 0;
         Coustomer Buyer { get; }
-        Car[] OurCars =
-           {
-               new Car("Toyota","12345","Lexus",100,"SONY",true,true,5000),
-               new Car("Volvo","11345","V70",50,"SONY",false,true,5000),
-               new Car("BMW","54321","Best Car Ever",75,"SONY",true,true,5000),
-            };
+        //Car[] OurCars =
+        //   {
+        //       new Car("Toyota","12345","Lexus",100,"SONY",true,true,5000),
+        //       new Car("Volvo","11345","V70",50,"SONY",false,true,5000),
+        //       new Car("BMW","54321","Best Car Ever",75,"SONY",true,true,5000),
+        //    };
+        
 
         public void VehicleMenu() {
-         Console.WriteLine("SuperElectriCarRental\n\nSelect Vehicle:\n" +
+         Console.WriteLine("SuperElectricCarRental\n\nSelect Vehicle:\n" +
              "1.Cars\n2.Motorbikes ( In Development )\n3.Exit");
           string Choise = Console.ReadLine();
             Console.Clear();
@@ -71,6 +73,7 @@ namespace SuperElectricCarRental.Domain
         }
         public void DisplayCars()
         {
+            Car[] OurCars = ch.GetCars();
             foreach (Car car in OurCars)
             {
                 car.WriteStats();
