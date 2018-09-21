@@ -1,4 +1,5 @@
 ﻿using System;
+<<<<<<< HEAD
 
 namespace SuperElectricCarRental.Domain
 {
@@ -18,4 +19,15 @@ namespace SuperElectricCarRental.Domain
         }
        
     }
+=======
+using System.Collections.Generic;
+using System.Text;
+
+namespace SuperElectricCarRental.Domain {
+  class Car : Vehicle {
+    public void StartEngine() {
+      Console.WriteLine("VROOOMMM....");
+    }
+  }
+>>>>>>> 55f8835ee496328a63c24e8c4ccd825589a3af0f
 }

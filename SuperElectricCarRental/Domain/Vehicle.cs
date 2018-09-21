@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 
 namespace SuperElectricCarRental.Domain
 {
@@ -26,4 +27,15 @@ namespace SuperElectricCarRental.Domain
                 " FuelCapacity: "+FuelCapacity+"\nPrice: "+Price+"\n");
         }
     }
+=======
+using System.Text;
+
+namespace SuperElectricCarRental.Domain {
+  abstract class Vehicle {
+    public string Manufacturer { get; set; }
+    public string Model { get; set; }
+    public DateTime CreationDate { get; set; }
+    public int Range { get; set; }
+  }
+>>>>>>> 55f8835ee496328a63c24e8c4ccd825589a3af0f
 }
