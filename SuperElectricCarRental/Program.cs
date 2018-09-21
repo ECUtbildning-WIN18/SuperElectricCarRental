@@ -21,10 +21,7 @@ namespace SuperElectricCarRental
          
             menu.MainMenu(cars);
           
-           //int menuChoice = Int32.Parse(Console.ReadLine());
-           //menu.MainMenuChoice(menuChoice,cars); 
-           //int carChoice = Int32.Parse(Console.ReadLine());
-           // menu.CarChoice(carChoice,cars);
+           
         }
 
         
