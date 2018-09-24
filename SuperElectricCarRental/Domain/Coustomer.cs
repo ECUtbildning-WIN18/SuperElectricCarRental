@@ -4,13 +4,13 @@ using System.Text;
 
 namespace SuperElectricCarRental.Domain
 {
-    class Coustomer : CreditCard // A Coustomer must have a Credit Card
+    class Coustomer // : CreditCard 
     {
         private string Name { get; }
         private int SocialSecurityNumber { get; }
 
-        public Coustomer(int cardNumber, int curentValue, string owner, int cSV, string name,int socialSecurityNumber)
-                 : base (cardNumber, curentValue, owner, cSV )
+        public Coustomer( string name,int socialSecurityNumber)
+        //int cardNumber, int curentValue, string owner, int cSV, : base (cardNumber, curentValue, owner, cSV )
         {
             Name = name;
             SocialSecurityNumber = socialSecurityNumber;

@@ -22,8 +22,18 @@ namespace SuperElectricCarRental.Domain
         }
         public void WriteStats()
         {
-            Console.Write("Brand: "+Brand+ " Model: "+ Model+ " RegNumber: "+ RegistrationNumber+
-                " FuelCapacity: "+FuelCapacity+"\nPrice: "+Price+"\n");
+                Console.Write("Brand: "+Brand+ " Model: "+ Model+ " RegNumber: "+ RegistrationNumber+
+                " FuelCapacity: "+FuelCapacity+"\nPrice: "+Price+"\n");   
+        }
+
+        public string GetCarName()
+        {
+            return Brand + " " + Model;
+        }
+
+        public int GetPrice()
+        {
+            return Price;
         }
     }
 }
